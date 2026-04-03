@@ -1,0 +1,19 @@
+export type OrderStatus = 'placed' | 'confirmed' | 'packed' | 'shipped' | 'delivered' | 'cancelled';
+export type PaymentStatus = 'pending' | 'paid' | 'failed' | 'refunded' | 'partial';
+export type ReturnStatus = 'requested' | 'approved' | 'received' | 'refunded' | 'rejected';
+export type ReturnType = 'stock_return_and_refund' | 'refund_only' | 'replacement';
+export type InvoiceDocumentType = 'tax_invoice' | 'bill_of_supply';
+export type SalesReturnDocumentType = 'tax_invoice_return' | 'bill_of_supply_return';
+export type InventoryMode = 'finished_goods' | 'recipe_realtime';
+export type TaxType = 'intra_state' | 'inter_state';
+export type GSTSlab = '0' | '5' | '12' | '18' | '28';
+export type PaymentMode = 'cash' | 'upi' | 'card' | 'net_banking';
+export type PaymentSurface = 'storefront' | 'pos';
+export type CouponDiscountType = 'percentage' | 'flat_amount';
+export type CouponSurface = 'storefront' | 'pos' | 'both';
+export type Unit = 'kg' | 'g' | 'mg' | 'ml' | 'L' | 'pcs' | 'box' | 'packet' | 'dozen' | string;
+export type MovementType = 'purchase_receipt' | 'production_in' | 'production_out' | 'sale' | 'pos_sale' | 'manual_adjustment' | 'reversal';
+export type PurchaseOrderStatus = 'draft' | 'sent' | 'received' | 'billed' | 'cancelled';
+export type PurchaseReturnStatus = 'requested' | 'approved' | 'sent' | 'credited';
+export type ProductionStatus = 'planned' | 'in_progress' | 'partially_completed' | 'completed' | 'cancelled';
+

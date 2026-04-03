@@ -1,0 +1,48 @@
+1. POS should include sub-module level permissions ✅
+2. Resolve input issues in POS for cash, card, and UPI payments. ✅
+3. Add a customer creation modal within POS and introduce a corresponding module. ✅
+4. Customers should only be created via POS; admin should not have this capability. Add a boolean field `is_from_pos` in the customer table to distinguish such entries. ✅
+8. Provide an option to remove applied discounts per transaction. ✅
+10. Fetch payment modes in POS from the master table. create a paymode_master that will be having option like isFroPOs and show that on pos side only else show in store front side , Introduce a payment mode master in both admin panel and POS. ✅
+13. Support both grid and list view modes in the POS terminal. ✅
+5. Standardize labels across all forms. in modal that must have clean placholder + labels + inline validations for every resepctive values
+
+
+
+
+
+
+6. Implement a defined format for bill generation like A4,70MM and more
+7. Enable product scanning functionality in POS.
+9. Generate reports based on HSN codes. and Implement item wise gst
+12. Add a WhatsApp sharing option for e-bills. in POS
+14. Log last activity for both admin and POS, including endpoint name and associated staff member.
+15. Allow local theme customization (color changes) for POS and admin interface only it must not effect the storefront only admin and pos and from settings they can change the theme compleetey check index.css for theming
+16. Master module for expense category in expense management
+17. in order table we have to bifrucate bills for storefront orders and pos order so we have think the best solution here 
+18. both the bills must have a fiscal year that is set by admin configration in setttings and this module wll aslo be permssion base with start date , end date , prefix for inovice in storefront , reciep in pos and bill of supply etc this all must be configured
+19. Salary me kuchh aise rakhna hai.
+Salary type: Monthly/Daily/Hourly.
+Based on this type calculate hogi.
+20. while adding staff or employee
+
+
+
+============== new 
+1. in admin add category modal is not opening /admin/categories
+2. when i hitting this routes 
+
+/admin/inventory/movements
+/admin/producion
+/admin/purchases
+/admin/content
+/admin/gst
+/admin/settings
+/admin/reports
+
+it moves me back to /admin
+this must not happne
+3. in this /pos/terminal show a icon to open a sidebar for navigation
+
+4. in pos for developer no other menus are shown in sidebar check that all the menus are rendered permssion based on not 
+every we have to show all the menus in boht admin and pos sidebar but permssion based rendering
